@@ -1,1 +1,2 @@
-# mid-project
+#Appleseeds Bootcamp - Middle Project
+
