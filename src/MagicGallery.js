@@ -19,7 +19,7 @@ const MagicGallery = () => {
       });
       }
     })()
-  },[offSet])
+  },[offSet, data])
 
   
   return (
