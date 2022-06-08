@@ -17,7 +17,7 @@ body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none; 
     font-family: "Pixel", sans-serif;  
-    background: linear-gradient(to bottom right, red,rgb(0, 0, 255)) center center/cover no-repeat;
+    background: linear-gradient(to bottom right, rgb(157, 5, 245),rgb(0, 0, 255)) center center/cover no-repeat;
     height: 100vh;
 }
 body::-webkit-scrollbar {
@@ -112,6 +112,9 @@ main {
 .info-container {
     margin: 40px;
 }
+.home-page {
+    width: 100vw;
+}
 
 .info-text {
     color: #fff;
@@ -122,110 +125,99 @@ main {
     margin-right: 20px;
     background-color: rgba(137, 43, 226, 0.075);
 }
-.info-gallery {
-    width: 27rem;
-    height: 27rem;
-    display: grid;
-    grid-template-areas:
-    "a a b c d d"
-    "a a e e d d"
-    "f g e e h h"
-    "i j o o h h"
-    "m m o o p q"
-    "m m k l r n"
-    ;
-    grid-gap: 10px;
+.magic-gallery {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 5px 5px; 
+    grid-template-areas: 
+      "a a g h n o p p"
+      "a a f f l m p p"
+      "b c f f k k q q"
+      "d e i j k k q q"
+      ; 
+    justify-content: stretch; 
+    align-content: space-between; 
+    align-items: stretch; 
+    width: 70em;   
 }
+.nft-card {
+    background-color: darkorchid;
+    text-decoration: none;
+
+}
+.nft-card:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.gallery-img{
+    object-fit: cover;
+    width: 100%;
+}
+
 #gal-img-1 {
     grid-area: a;
-    background-image: url(./images/gallery/1.png);
-    background-size: cover;
+    font-weight: bold;
+    font-size: 20px;
 }
 #gal-img-2 {
     grid-area: b;
-    background-image: url(./images/gallery/2.png);
-    background-size: cover;
 }
 #gal-img-3 {
     grid-area: c;
-    background-image: url(./images/gallery/3.png);
-    background-size: cover;
 }
 #gal-img-4 {
     grid-area: d;
-    background-image: url(./images/gallery/4.png);
-    background-size: cover;
 }
 #gal-img-5 {
     grid-area: e;
-    background-image: url(./images/gallery/5.png);
-    background-size: cover;
 }
 #gal-img-6 {
     grid-area: f;
-    background-image: url(./images/gallery/6.png);
-    background-size: cover;
+    font-weight: bold;
+    font-size: 20px;
 }
 #gal-img-7 {
     grid-area: g;
-    background-image: url(./images/gallery/7.png);
-    background-size: cover;
 }
 #gal-img-8 {
     grid-area: h;
-    background-image: url(./images/gallery/8.png);
-    background-size: cover;
 }
 #gal-img-9 {
     grid-area: i;
-    background-image: url(./images/gallery/9.png);
-    background-size: cover;
 }
 #gal-img-10 {
     grid-area: j;
-    background-image: url(./images/gallery/10.png);
-    background-size: cover;
 }
 #gal-img-11 {
     grid-area: k;
-    background-image: url(./images/gallery/11.png);
-    background-size: cover;
+    font-weight: bold;
+    font-size: 20px;
 }
 #gal-img-12 {
     grid-area: l;
-    background-image: url(./images/gallery/12.png);
-    background-size: cover;
 }
 #gal-img-13 {
     grid-area: m; 
-    background-image: url(./images/gallery/13.png);
-    background-size: cover;
 }
 #gal-img-14 {
     grid-area: n;
-    background-image: url(./images/gallery/14.png);
-    background-size: cover;
 }
 #gal-img-15 {
     grid-area: o;
-    background-image: url(./images/gallery/15.png);
-    background-size: cover;
 }
 #gal-img-16 {
     grid-area: p;
-    background-image: url(./images/gallery/16.png);
-    background-size: cover;
+    font-weight: bold;
+    font-size: 20px;
 }
 #gal-img-17 {
     grid-area: q;
-    background-image: url(./images/gallery/17.png);
-    background-size: cover;
+    font-weight: bold;
+    font-size: 20px;
 }
-#gal-img-18 {
-    grid-area: r;
-    background-image: url(./images/gallery/18.png);
-    background-size: cover;
-}
+
 
 .yeti-container {
     width: 27rem;

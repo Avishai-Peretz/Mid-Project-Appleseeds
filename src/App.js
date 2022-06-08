@@ -12,7 +12,7 @@ export default function App() {
           appId={process.env.REACT_APP_APP_ID}
           serverUrl={process.env.REACT_APP_SERVER_URL}
       >             
-          <HomePage style={{height:'1000px'}}/> 
+          <HomePage className="column-c-c" style={{height:'1000px'}}/> 
       </MoralisProvider>
   )
 }

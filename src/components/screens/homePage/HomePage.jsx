@@ -33,7 +33,7 @@ const HomePage = () => {
         )
     }
     return (
-        <>
+        <div className="column-c-c home-page">
             <Profile
                 user={user}
                 inputValue={inputValue}
@@ -45,7 +45,7 @@ const HomePage = () => {
                 selectValue={selectValue}
             /> 
             <MagicGallery />
-        </>
+        </div>
     );
 }
 
