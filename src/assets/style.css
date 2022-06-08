@@ -1,0 +1,416 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.none {
+    display: none;
+}
+.shown {
+    display: block;
+}
+body {
+    font-size: 10px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
+    font-family: "Pixel", sans-serif;  
+    background: linear-gradient(to bottom right, red,rgb(0, 0, 255)) center center/cover no-repeat;
+    height: 100vh;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+#background {
+    position: fixed;
+    background: url(./images/template_bg_NEW_16_by_9_NO_STARS.png) center center/cover no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+header {
+    width: 100vw;
+    height: 99vh;
+}
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 5rem;
+}
+#social-links-container-pc{
+    width: 24rem;
+    height: 5.1rem;
+}
+#social-links-container-mobile{
+    display: none;
+}
+.btn{
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(to bottom right, red, rgb(0, 0, 255)) ;
+}
+.btn:hover{
+    background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.548), rgba(0, 0, 255, 0.432)) ;
+}
+
+.link-btn {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: 0.5rem;
+}
+.discord-btn {
+    background: url(./images/discord_icon.png) center center/cover;
+}
+.discord-btn:hover {
+    background: url(./images/discord_button_animated.gif) center center/cover;
+}
+.magic-eden-btn {
+    background: url(./images/magic-eden-icon.png) center center/cover;
+}
+.magic-eden-btn:hover {
+    background: url(./images/ME_button_animated.gif) center center/cover;
+}
+
+.twitter-btn {
+    background: url(./images/twitter-icon.png) center center/cover;
+}
+.twitter-btn:hover {
+    background: url(./images/twitter_button_animated.gif) center center/cover;
+}
+
+.intro-gif img{
+    width: 50rem;
+    height: 10rem;
+}
+
+.static {
+    position:absolute;
+    top:51%;
+  }
+  
+.static:hover {
+    opacity:0;
+}
+#intro-container {
+    height: 100vh;
+    width: 55rem;
+}
+main {
+    width: 100vw;
+    margin-top: 20px;
+}
+
+.info-container {
+    margin: 40px;
+}
+
+.info-text {
+    color: #fff;
+    width: 30rem;
+    padding: 10px;
+    border-radius: 10px ;
+    height: 27rem;
+    margin-right: 20px;
+    background-color: rgba(137, 43, 226, 0.075);
+}
+.info-gallery {
+    width: 27rem;
+    height: 27rem;
+    display: grid;
+    grid-template-areas:
+    "a a b c d d"
+    "a a e e d d"
+    "f g e e h h"
+    "i j o o h h"
+    "m m o o p q"
+    "m m k l r n"
+    ;
+    grid-gap: 10px;
+}
+#gal-img-1 {
+    grid-area: a;
+    background-image: url(./images/gallery/1.png);
+    background-size: cover;
+}
+#gal-img-2 {
+    grid-area: b;
+    background-image: url(./images/gallery/2.png);
+    background-size: cover;
+}
+#gal-img-3 {
+    grid-area: c;
+    background-image: url(./images/gallery/3.png);
+    background-size: cover;
+}
+#gal-img-4 {
+    grid-area: d;
+    background-image: url(./images/gallery/4.png);
+    background-size: cover;
+}
+#gal-img-5 {
+    grid-area: e;
+    background-image: url(./images/gallery/5.png);
+    background-size: cover;
+}
+#gal-img-6 {
+    grid-area: f;
+    background-image: url(./images/gallery/6.png);
+    background-size: cover;
+}
+#gal-img-7 {
+    grid-area: g;
+    background-image: url(./images/gallery/7.png);
+    background-size: cover;
+}
+#gal-img-8 {
+    grid-area: h;
+    background-image: url(./images/gallery/8.png);
+    background-size: cover;
+}
+#gal-img-9 {
+    grid-area: i;
+    background-image: url(./images/gallery/9.png);
+    background-size: cover;
+}
+#gal-img-10 {
+    grid-area: j;
+    background-image: url(./images/gallery/10.png);
+    background-size: cover;
+}
+#gal-img-11 {
+    grid-area: k;
+    background-image: url(./images/gallery/11.png);
+    background-size: cover;
+}
+#gal-img-12 {
+    grid-area: l;
+    background-image: url(./images/gallery/12.png);
+    background-size: cover;
+}
+#gal-img-13 {
+    grid-area: m; 
+    background-image: url(./images/gallery/13.png);
+    background-size: cover;
+}
+#gal-img-14 {
+    grid-area: n;
+    background-image: url(./images/gallery/14.png);
+    background-size: cover;
+}
+#gal-img-15 {
+    grid-area: o;
+    background-image: url(./images/gallery/15.png);
+    background-size: cover;
+}
+#gal-img-16 {
+    grid-area: p;
+    background-image: url(./images/gallery/16.png);
+    background-size: cover;
+}
+#gal-img-17 {
+    grid-area: q;
+    background-image: url(./images/gallery/17.png);
+    background-size: cover;
+}
+#gal-img-18 {
+    grid-area: r;
+    background-image: url(./images/gallery/18.png);
+    background-size: cover;
+}
+
+.yeti-container {
+    width: 27rem;
+    height: 27rem;
+    background: url(./images/yetiShip.png) center center no-repeat;
+}
+.roadmap-text {
+        color: #fff;
+        width: 27rem;
+        padding: 10px;
+        border-radius: 10px ;
+        height: 27rem;
+        margin-left: 70px;
+        background-color: rgba(137, 43, 226, 0.075);
+}
+
+#demo {
+    height: 3rem;
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+
+.countdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 9rem;
+}
+
+.countdown ul {
+    display: flex;
+    gap: 1rem
+}
+.countdown .clock-item {
+    list-style: none;
+    width: 8rem;
+    height: 4rem;
+    height: auto;
+    transform: translateX(-7px);
+}
+.countdown .clock-item .count-number {
+    background: var(--accent-color);
+    transition: 2s;
+    color: #fff;
+    font-size: 2.6rem;
+    font-weight: 700;
+    font-family: var(--font-secondary);
+    padding: 1rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    background-color: rgba(137, 43, 226, 0.075);
+    border-radius: 4px 4px 0 0;
+}
+.countdown .clock-item .count-text {
+    background: var(--btn-bg-color);
+    font-family: var(--font-secondary);
+    margin-top: 5px;
+    background-color: rgba(137, 43, 226, 0.075);
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0.5rem 0.7rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    border-radius: 0 0 4px 4px;
+  }
+  
+  .countdown h1 {
+    text-shadow: 2px 2px 0 var(--accent-color);
+    font-style: italic;
+    margin: 2rem 0;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  
+  .countdown p {
+    font-size: 1.1rem;
+    font-family: var(--font-secondary);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  /* ------------------------------faq----------------------------- */
+  .faq-heading{
+    border-bottom: #777;
+    padding: 20px 60px;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.hr-line{
+  width: 60rem;
+  margin: auto;
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: #444;
+    color: #ccc;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+    transform: 1s;
+}
+.faq-page-none-click {
+    /* background-color: #eee; */
+    color: #444;
+    color: #ccc;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+    transform: 1s;
+}
+.faq-body{
+    margin: auto;
+    color: #ccc;
+    font-size: 18px;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+   transform: 1s;
+   
+}
+.faq-body-none-click{
+    margin: auto;
+    color: #ccc;
+    font-size: 18px;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+   transform: 1s;
+   
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: #f9f9f959;
+}
+.faq-one-page:hover {
+    background-color: #f9f9f959;
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    width: 60rem;
+    background-color: rgba(255, 255, 255, 0.103);
+    display: none;
+    overflow: hidden;
+    
+}
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+.media {
+    display: none;
+}
+
+.rights {
+    text-align: center;
+    color: #fff;
+}
