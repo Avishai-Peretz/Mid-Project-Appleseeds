@@ -3,6 +3,7 @@ import { useMoralis } from 'react-moralis'
 import Profile from '../../Profile';
 import Login from '../../Login';
 import MagicGallery from '../../../MagicGallery';
+import Header from './Header';
 
 const HomePage = () => {
     const {
@@ -23,17 +24,21 @@ const HomePage = () => {
 
     if (!isAuthenticated) {
         return (
-            <Login
-                user={user}
-                selectValue={selectValue}
-                authenticate={authenticate}
-                setSelectValue={setSelectValue}
-                isAuthenticating={isAuthenticating}
-            />            
+            <>
+                <Header />
+                <Login
+                    user={user}
+                    selectValue={selectValue}
+                    authenticate={authenticate}
+                    setSelectValue={setSelectValue}
+                    isAuthenticating={isAuthenticating}
+                />            
+            </>
         )
     }
     return (
         <div className="column-c-c home-page">
+            <Header />
             <Profile
                 user={user}
                 inputValue={inputValue}

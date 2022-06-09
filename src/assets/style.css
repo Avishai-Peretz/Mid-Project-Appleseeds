@@ -16,7 +16,7 @@ body {
     font-size: 10px;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none; 
-    font-family: "Pixel", sans-serif;  
+    font-family: 'Chakra Petch', sans-serif;
     background: linear-gradient(to bottom right, rgb(157, 5, 245),rgb(0, 0, 255)) center center/cover no-repeat;
     height: 100vh;
 }
@@ -32,15 +32,27 @@ body::-webkit-scrollbar {
     z-index: -1;
 }
 
-header {
+.header {
     width: 100vw;
     height: 99vh;
 }
-nav {
+.header a {
+    text-decoration: none;
+}
+.nav {
     position: fixed;
     top: 0;
     right: 0;
     height: 5rem;
+    background-color: #222034;
+}
+.tabs {
+    position: fixed;
+    left: 30%;
+}
+.tab {
+    font-size: 24px;
+    margin: 0 1.5rem 0 1.5rem;
 }
 #social-links-container-pc{
     width: 24rem;
@@ -142,6 +154,7 @@ main {
     width: 70em;   
 }
 .nft-card {
+    padding: 0 0 nav 0;
     background-color: darkorchid;
     text-decoration: none;
 

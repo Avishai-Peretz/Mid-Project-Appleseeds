@@ -8,7 +8,7 @@ const MagicGallery = () => {
   const [imgId, setImgId] = useState(1)
   
   useEffect(() => {
-    (async ()=>{
+    (async () => {
       if(offSet < 17){
         await axios.get(`https://api-mainnet.magiceden.dev/v2/collections/justape/listings?offset=0&limit=18`)
         .then(response => {
@@ -27,9 +27,16 @@ const MagicGallery = () => {
   return (
     <div className="magic-gallery" > 
       {data.map(({ tokenAddress, extra, price, tokenMint }, index) => {
+        const img = extra.img;
+        const arr = img.split('/');
+        arr[arr.length - 1].split('.')
+        const nftNum = arr[arr.length - 1].split('.')[0]
         return (
           <a href={`https://magiceden.io/item-details/${tokenMint}`} key={tokenAddress} id={`gal-img-${index + 1}`} className="nft-card">
-            <img src={extra.img} alt="Nft" id={`gal-img-${index + 1}`} className="gallery-img"></img>   
+            <img src={extra.img} alt="Nft" id={`gal-img-${index + 1}`} className="gallery-img"></img> 
+            <div>
+              <span className="txt_white" >Ape #{nftNum}</span>
+            </div>
             <div>
               <span className="txt_red bold">Just Ape</span>
             </div>
