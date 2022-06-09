@@ -162,6 +162,15 @@ main {
     width: 100vw;
 }
 
+.change-username{
+    color: #ccc;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    border-radius: 10px;
+    background-color: rgba(137, 43, 226, 0.075);
+}
+
 .info-text {
     color: #fff;
     width: 80vw;

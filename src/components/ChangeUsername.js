@@ -18,7 +18,7 @@ export default function ChangeUsername({ inputValue, setUserData, setInputValue,
 
   return (
     <form
-        className="column-c-c"
+        className="column-c-c change-username"
         onSubmit={submitUsername}
     >
         <label>Set new username</label>
