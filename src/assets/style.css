@@ -164,28 +164,27 @@ main {
 
 .info-text {
     color: #fff;
-    width: 30rem;
+    width: 80vw;
     padding: 10px;
     border-radius: 10px ;
-    height: 27rem;
     margin-right: 20px;
     background-color: rgba(137, 43, 226, 0.075);
 }
 .magic-gallery {
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr; 
     gap: 5px 5px; 
     grid-template-areas: 
-      "a a g h n o p p"
-      "a a f f l m p p"
-      "b c f f k k q q"
-      "d e i j k k q q"
+      "a a g h n o p p r r t t t t"
+      "a a f f l m p p r r t t t t"
+      "b c f f k k q q s s t t t t"
+      "d e i j k k q q s s t t t t"
       ; 
     justify-content: stretch; 
     align-content: space-between; 
     align-items: stretch; 
-    width: 70em;   
+    width: 90vw;   
 }
 .nft-card {
     padding: 0 0 nav 0;
@@ -261,6 +260,21 @@ main {
 }
 #gal-img-17 {
     grid-area: q;
+    font-weight: bold;
+    font-size: 20px;
+}
+#gal-img-18 {
+    grid-area: r;
+    font-weight: bold;
+    font-size: 20px;
+}
+#gal-img-119 {
+    grid-area: s;
+    font-weight: bold;
+    font-size: 20px;
+}
+#gal-img-20 {
+    grid-area: t;
     font-weight: bold;
     font-size: 20px;
 }
