@@ -7,7 +7,7 @@ import Header from './screens//homePage/Header';
 import WelcomeUser from './WelcomeUser';
 import WalletAddress from './WalletAddress';
 import ChangeUsername from './ChangeUsername';
-import CounterComponent from './CounterComponent';
+import {CounterComponent} from './CounterComponent';
 
 function PlutoPigsPureHTML() {
     
@@ -335,7 +335,7 @@ function PlutoPigsPureHTML() {
                             <img id="plutoGif" src="https://static.wixstatic.com/media/8870fd_f0529b3197584e0abd41ec0149a2e446~mv2.gif" alt='PlutoGif' />
                         </div>
                         <div id="countdown-h1" className="intro"></div>
-                        
+                        <CounterComponent />
                         <div id="social-links-container-mobile" className="row-c-c">
                         <a rel="noreferrer" href="https://discord.com/invite/dQEMFTVWx2" className="link-btn discord-btn" target="_blank">{}</a>
                             <a rel="noreferrer" href="https://magiceden.io/marketplace/justape" className="link-btn magic-eden-btn" target="_blank">{}</a>
@@ -344,7 +344,6 @@ function PlutoPigsPureHTML() {
                     </div>
                 </header>
                 <main className="column-c-c">
-                    <div className="info-container row-c-c">
                         <div className="info-text">
                             <h1 className="txt-40">What are PlutoPigs?</h1>
                             <p className="txt-24 bold">PlutoPigs are a collection of 8888 unique and hand drawn pixel art NFT's.
@@ -355,6 +354,7 @@ function PlutoPigsPureHTML() {
                 
                                 We do it because we love doing this and not only to make money, like a lot of projects out there who promise you the whole world and than its just crickets in the bush.</p>
                         </div>
+                    <div className="info-container row-c-c">
                         <MagicGallery />
                     </div>
                     <hr className="hr-line" />

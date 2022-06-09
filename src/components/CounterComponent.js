@@ -1,6 +1,9 @@
-import React, { useEffect, useState } from 'react'
 
-export default function CounterComponent() {
+import React, { useEffect, useState } from 'react';
+
+
+
+export function CounterComponent() {
 
     const countDownTime = new Date(2022, 8, 12, 16,30).getTime();
     const now = new Date().getTime();
@@ -9,18 +12,19 @@ export default function CounterComponent() {
     let [hours,setHours] =  useState(Math.floor(diff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)));
     let [minutes, setMinutes] =  useState(Math.floor(diff % (1000 * 60 * 60) / (1000 * 60)));
     let [seconds, setSeconds] =  useState(Math.floor(diff % (1000 * 60) / 1000));
-    const countDownFunction = () => {
-        setInterval(() => {
+    const countDownFunction = () => {    
+            const countDownTime = new Date(2022, 8, 12, 16,30).getTime();
+            const now = new Date().getTime();
+            const diff = countDownTime - now;
             setDays(Math.floor(diff / (1000 * 60 * 60 * 24)));
             setHours(Math.floor(diff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)));
             setMinutes(Math.floor(diff % (1000 * 60 * 60) / (1000 * 60)));
             setSeconds(Math.floor(diff % (1000 * 60) / 1000));
-        }, 1000)
     }
 
     useEffect(
         () => countDownFunction()
-    ,[seconds]);
+    ,[1000]);
     
   return (
     <div className="countdown">
