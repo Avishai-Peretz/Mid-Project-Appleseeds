@@ -21,7 +21,7 @@ export default function ChangeUsername({ inputValue, setUserData, setInputValue,
         className="column-c-c change-username"
         onSubmit={submitUsername}
     >
-        <label>Set new username</label>
+        <label className="txt-24">Set new username</label>
         <input placeholder='Change username' value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
           <label className="txt_red bold">{invalidUsername}</label>
         <button className='btn' style={{ margin: '10px' }} type='submit' disabled={isUserUpdating}>Change</button>
