@@ -8,23 +8,27 @@ export function CounterComponent() {
     const countDownTime = new Date(2022, 8, 12, 16,30).getTime();
     const now = new Date().getTime();
     const diff = countDownTime - now;
-    let [days, setDays] = useState(Math.floor(diff / (1000 * 60 * 60 * 24)));
-    let [hours,setHours] =  useState(Math.floor(diff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)));
-    let [minutes, setMinutes] =  useState(Math.floor(diff % (1000 * 60 * 60) / (1000 * 60)));
-    let [seconds, setSeconds] =  useState(Math.floor(diff % (1000 * 60) / 1000));
+    let [count, setCount] = useState({
+        days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+        hours: Math.floor(diff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)),
+        minutes: Math.floor(diff % (1000 * 60 * 60) / (1000 * 60)),
+        seconds: Math.floor(diff % (1000 * 60) / 1000)
+    });
     const countDownFunction = () => {    
             const countDownTime = new Date(2022, 8, 12, 16,30).getTime();
             const now = new Date().getTime();
             const diff = countDownTime - now;
-            setDays(Math.floor(diff / (1000 * 60 * 60 * 24)));
-            setHours(Math.floor(diff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)));
-            setMinutes(Math.floor(diff % (1000 * 60 * 60) / (1000 * 60)));
-            setSeconds(Math.floor(diff % (1000 * 60) / 1000));
+            setCount({
+                days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+                hours: Math.floor(diff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)),
+                minutes: Math.floor(diff % (1000 * 60 * 60) / (1000 * 60)),
+                seconds: Math.floor(diff % (1000 * 60) / 1000)
+            })
     }
 
     useEffect(
         () => countDownFunction()
-    ,[1000]);
+    ,[count]);
     
   return (
     <div className="countdown">
@@ -32,22 +36,22 @@ export function CounterComponent() {
                                 className="countDown"
                                 data-date="Jun 22, 2022 4:00:00 PM UTC">
                                 <li className="clock-item">
-                                    <span className="count-number days">{days}</span>
+                                    <span className="count-number days">{count.days}</span>
                                     <p className="count-text">Days</p>
                                 </li>
 
                                 <li className="clock-item">
-                                    <span className="count-number hours">{hours}</span>
+                                    <span className="count-number hours">{count.hours}</span>
                                     <p className="count-text">Hours</p>
                                 </li>
 
                                 <li className="clock-item">
-                                    <span className="count-number minutes">{minutes}</span>
+                                    <span className="count-number minutes">{count.minutes}</span>
                                     <p className="count-text">Minutes</p>
                                 </li>
 
                                 <li className="clock-item">
-                                    <span className="count-number seconds">{seconds}</span>
+                                    <span className="count-number seconds">{count.seconds}</span>
                                     <p className="count-text">Seconds</p>
                                 </li>
                             </ul>
