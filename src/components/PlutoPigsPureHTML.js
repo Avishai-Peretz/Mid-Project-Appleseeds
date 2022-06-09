@@ -58,7 +58,7 @@ function PlutoPigsPureHTML() {
                             <img src="https://static.wixstatic.com/media/ceb916_c2e64543bcd945baa31df6faff4a51fc~mv2.png/v1/fill/w_237,h_237,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/PlutoSign.png" alt="PlutoSign.png" style={{ width: "237px", height: '237px', objectFit: 'cover', objectPosition: '50% 50%' }} />
                         </div>
                         <div className="intro-gif" >
-                            <img id="plutoGif" src="../assets/images/JET_ANIMATION_NON_REPEAT.gif" className="none" alt='plutoGif' />
+                            <img id="plutoGif" src="https://static.wixstatic.com/media/8870fd_f0529b3197584e0abd41ec0149a2e446~mv2.gif" alt='PlutoGif' />
                         </div>
                         <div id="countdown-h1" className="intro"></div>
                         <div className="countdown">
@@ -354,7 +354,7 @@ function PlutoPigsPureHTML() {
                             <img src="https://static.wixstatic.com/media/ceb916_c2e64543bcd945baa31df6faff4a51fc~mv2.png/v1/fill/w_237,h_237,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/PlutoSign.png" alt="PlutoSign.png" style={{ width: "237px", height: '237px', objectFit: 'cover', objectPosition: '50% 50%' }} />
                         </div>
                         <div className="intro-gif" >
-                            <img id="plutoGif" src="../assets/images/JET_ANIMATION_NON_REPEAT.gif" className="none" alt='PlutoGif' />
+                            <img id="plutoGif" src="https://static.wixstatic.com/media/8870fd_f0529b3197584e0abd41ec0149a2e446~mv2.gif" alt='PlutoGif' />
                         </div>
                         <div id="countdown-h1" className="intro"></div>
                         <div className="countdown">
