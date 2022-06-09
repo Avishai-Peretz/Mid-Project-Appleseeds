@@ -9,7 +9,7 @@ const MagicGallery = () => {
   useEffect(() => {
     (async () => {
       if(offSet < 17){
-        await axios.get(`https://api-mainnet.magiceden.dev/v2/collections/justape/listings?offset=0&limit=18`)
+        await axios.get(`https://api.allorigins.win/raw?url=https://api-mainnet.magiceden.dev/v2/collections/justape/listings?offset=0&limit=18`)
         .then(response => {
           setData([...response.data])
           setOffSet(offSet + 17)
