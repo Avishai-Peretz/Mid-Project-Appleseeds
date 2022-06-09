@@ -7,6 +7,7 @@ import Header from './screens//homePage/Header';
 import WelcomeUser from './WelcomeUser';
 import WalletAddress from './WalletAddress';
 import ChangeUsername from './ChangeUsername';
+import CounterComponent from './CounterComponent';
 
 function PlutoPigsPureHTML() {
     
@@ -61,31 +62,8 @@ function PlutoPigsPureHTML() {
                             <img id="plutoGif" src="https://static.wixstatic.com/media/8870fd_f0529b3197584e0abd41ec0149a2e446~mv2.gif" alt='PlutoGif' />
                         </div>
                         <div id="countdown-h1" className="intro"></div>
-                        <div className="countdown">
-                            <ul id="countdown"
-                                className="countDown"
-                                data-date="Jun 22, 2022 4:00:00 PM UTC">
-                                <li className="clock-item">
-                                    <span className="count-number days">?</span>
-                                    <p className="count-text">Days</p>
-                                </li>
-
-                                <li className="clock-item">
-                                    <span className="count-number hours">?</span>
-                                    <p className="count-text">Hour</p>
-                                </li>
-
-                                <li className="clock-item">
-                                    <span className="count-number minutes">?</span>
-                                    <p className="count-text">Min</p>
-                                </li>
-
-                                <li className="clock-item">
-                                    <span className="count-number seconds">?</span>
-                                    <p className="count-text">Sec</p>
-                                </li>
-                            </ul>
-                        </div>
+                        <CounterComponent />
+                        
                         <div id="social-links-container-mobile" className="row-c-c">
                             <a rel="noreferrer" href="https://discord.com/invite/dQEMFTVWx2" className="link-btn discord-btn" target="_blank">{}</a>
                             <a rel="noreferrer" href="https://magiceden.io/marketplace/justape" className="link-btn magic-eden-btn" target="_blank">{}</a>
@@ -357,31 +335,7 @@ function PlutoPigsPureHTML() {
                             <img id="plutoGif" src="https://static.wixstatic.com/media/8870fd_f0529b3197584e0abd41ec0149a2e446~mv2.gif" alt='PlutoGif' />
                         </div>
                         <div id="countdown-h1" className="intro"></div>
-                        <div className="countdown">
-                            <ul id="countdown"
-                                className="countDown"
-                                data-date="Jun 22, 2022 4:00:00 PM UTC">
-                                <li className="clock-item">
-                                    <span className="count-number days">?</span>
-                                    <p className="count-text">Days</p>
-                                </li>
-
-                                <li className="clock-item">
-                                    <span className="count-number hours">?</span>
-                                    <p className="count-text">Hour</p>
-                                </li>
-
-                                <li className="clock-item">
-                                    <span className="count-number minutes">?</span>
-                                    <p className="count-text">Min</p>
-                                </li>
-
-                                <li className="clock-item">
-                                    <span className="count-number seconds">?</span>
-                                    <p className="count-text">Sec</p>
-                                </li>
-                            </ul>
-                        </div>
+                        
                         <div id="social-links-container-mobile" className="row-c-c">
                         <a rel="noreferrer" href="https://discord.com/invite/dQEMFTVWx2" className="link-btn discord-btn" target="_blank">{}</a>
                             <a rel="noreferrer" href="https://magiceden.io/marketplace/justape" className="link-btn magic-eden-btn" target="_blank">{}</a>

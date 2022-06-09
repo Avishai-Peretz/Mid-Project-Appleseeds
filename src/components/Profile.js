@@ -20,7 +20,8 @@ export default function Profile({
     <CostumeProfile>
         <div style={{ height: '40vh', margin: '10px' }} className="column-se-c">
           <WelcomeUser user={user} />
-          <WalletAddress user={user} selectValue={selectValue} />
+        <WalletAddress user={user} selectValue={selectValue} />
+        
           {/* <ChangeUsername inputValue={inputValue} setUserData={setUserData} setInputValue={setInputValue} isUserUpdating={isUserUpdating} user={user} /> */}
           <button className='btn' onClick={handleLogout} disabled={isLoggingOut}>Logout</button>
         </div>
