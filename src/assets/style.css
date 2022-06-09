@@ -9,6 +9,9 @@
 .none {
     display: none;
 }
+[none] {
+    display: none;  
+}
 .shown {
     display: block;
 }
@@ -17,8 +20,6 @@ body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none; 
     font-family: 'Chakra Petch', sans-serif;
-    background: linear-gradient(to bottom right, rgb(157, 5, 245),rgb(0, 0, 255)) center center/cover no-repeat;
-    height: 100vh;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -45,6 +46,39 @@ body::-webkit-scrollbar {
     right: 0;
     height: 5rem;
     background-color: #222034;
+}
+.login {
+    position: fixed;
+    left: 3%;
+    top: 0.1rem;
+    height: 5rem;
+    z-index: 1;
+}
+.logout-btn {
+    font-size: 17px;
+    width: 10rem;
+    height: 2rem;
+    margin: 0 0 1rem 4rem;
+}
+
+.header-welcome{
+    color: #ccc;
+    position: fixed;
+    left: 3%;
+    top: 0.1rem;
+    height: 5rem;
+    z-index: 1; 
+}
+.login-select{
+    padding: .5rem;
+    background-color: #333;
+    color: #ccc;
+    margin: 1.5rem;
+    border-radius: .7rem;
+}
+.login-btn{
+    font-size: 1.3rem;
+    width: 6rem;
 }
 .tabs {
     position: fixed;

@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function WelcomeUser({user}) {
+export default function WelcomeUser({user, styleName, handleLogout, isLoggingOut}) {
 
   return (
-    <h1 className="txt-40">
-      Welcome dear "{user.getUsername()}"
-    </h1>
+    <div className={styleName}>
+      <span className='txt-24'>Welcome dear " {user.getUsername()} " </span><button className='btn logout-btn' onClick={handleLogout} disabled={isLoggingOut}>Logout</button>
+    </div>
   )
 }

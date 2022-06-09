@@ -5,7 +5,6 @@ const MagicGallery = () => {
   
   const [data, setData] = useState([])
   const [offSet, setOffSet] = useState(0)
-  const [imgId, setImgId] = useState(1)
   
   useEffect(() => {
     (async () => {
@@ -20,9 +19,7 @@ const MagicGallery = () => {
       });
       }
     })()
-    console.log(data)
   },[offSet, data])
-  console.log(data)
   
   return (
     <div className="magic-gallery" > 
@@ -48,16 +45,16 @@ const MagicGallery = () => {
                 <path d="M15.4489 8.70938C15.3448 8.60528 15.2017 8.54456 15.0498 8.54456H1.28281C1.03124 8.54456 0.905451 8.84818 1.08329 9.02601L3.80286 11.7456C3.90696 11.8497 4.0501 11.9104 4.20191 11.9104H17.9689C18.2205 11.9104 18.3463 11.6068 18.1685 11.429L15.4489 8.70938Z" fill="url(#paint2_linear_354_8099)"></path>
                 <defs>
                   <linearGradient id="paint0_linear_354_8099" x1="16.6538" y1="1.87538" x2="7.1259" y2="20.1251" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#00FFA3"></stop>
-                    <stop offset="1" stop-color="#DC1FFF"></stop>
+                    <stop stopColor="#00FFA3"></stop>
+                    <stop offset="1" stopColor="#DC1FFF"></stop>
                   </linearGradient>
                   <linearGradient id="paint1_linear_354_8099" x1="12.4877" y1="-0.299659" x2="2.95979" y2="17.9501" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#00FFA3"></stop>
-                    <stop offset="1" stop-color="#DC1FFF"></stop>
+                    <stop stopColor="#00FFA3"></stop>
+                    <stop offset="1" stopColor="#DC1FFF"></stop>
                   </linearGradient>
                   <linearGradient id="paint2_linear_354_8099" x1="14.5575" y1="0.78106" x2="5.02959" y2="19.0308" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#00FFA3"></stop>
-                    <stop offset="1" stop-color="#DC1FFF"></stop>
+                    <stop stopColor="#00FFA3"></stop>
+                    <stop offset="1" stopColor="#DC1FFF"></stop>
                   </linearGradient>
                 </defs>
               </svg>
